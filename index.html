@@ -1,11 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>facebook</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      async
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      async
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="/style.css" />
+    <script async src="/app.js"></script>
+
+    <title>Facebook - Home</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="flex_center_between logo_container">
+        <ion-icon class="logo" name="logo-facebook"></ion-icon>
+
+        <div class="relative input_container">
+          <ion-icon class="search_icon" name="search-outline"></ion-icon>
+          <input type="text" placeholder="Search Facebook" required />
+        </div>
+      </div>
+
+      <nav>
+        <ul class="flex_center_between nav_icons">
+          <li title="Home" id="home">
+            <ion-icon name="home"></ion-icon>
+          </li>
+          <li title="Watch">
+            <ion-icon name="play-circle-outline"></ion-icon>
+          </li>
+          <li title="MarketPlace">
+            <ion-icon name="storefront-outline"></ion-icon>
+          </li>
+          <li title="Groups">
+            <ion-icon name="people-outline"></ion-icon>
+          </li>
+          <li title="Gaming">
+            <ion-icon name="game-controller-outline"></ion-icon>
+          </li>
+        </ul>
+      </nav>
+
+      <div>
+        <ul class="flex_center_between right_nav_icons">
+          <li title="Menu">
+            <ion-icon name="apps-outline"></ion-icon>
+          </li>
+          <li title="Messenger">
+            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+          </li>
+          <li title="Notifications">
+            <ion-icon name="notifications-outline"></ion-icon>
+          </li>
+          <li title="Account">
+            <img src="/assets/profile7.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="main_content">
+      <ul class="left_nav flex_col">
+        <li>
+          <img src="/assets/profile7.jpg" alt="" />
+          Alex Keys
+        </li>
+        <li>
+          <ion-icon name="people-outline"></ion-icon>
+          Friends
+        </li>
+        <li>
+          <ion-icon name="timer-outline"></ion-icon>
+          Memories
+        </li>
+        <li>
+          <ion-icon name="bookmark"></ion-icon>
+          Saved
+        </li>
+        <li>
+          <ion-icon name="people-circle"></ion-icon>
+          Groups
+        </li>
+        <li>
+          <ion-icon name="play-circle"></ion-icon>
+          Video
+        </li>
+        <li>
+          <ion-icon name="storefront"></ion-icon>
+          Marketplace
+        </li>
+        <li>
+          <ion-icon name="receipt"></ion-icon>
+          Feeds
+        </li>
+        <li>
+          <ion-icon name="calendar-number-outline"></ion-icon>
+          Events
+        </li>
+        <li>
+          <ion-icon name="bar-chart"></ion-icon>
+          Ads Manager
+        </li>
+        <li>
+          <ion-icon name="heart-circle"></ion-icon>
+          Fundraisers
+        </li>
+
+        <button id="showMore" class="flex w-full">
+          <ion-icon name="chevron-down-circle-outline"></ion-icon>
+          See More
+        </button>
+
+        <!-- class="hidden" -->
+        <div class="hidden" id="moreContent">
+          <li>
+            <ion-icon name="gift"></ion-icon>
+            Birthdays
+          </li>
+          <li>
+            <ion-icon name="leaf"></ion-icon>
+            Climate Science Center
+          </li>
+          <li>
+            <ion-icon name="logo-playstation"></ion-icon>
+            Gaming video
+          </li>
+          <li>
+            <ion-icon name="chatbubble-outline"></ion-icon>
+            Messenger
+          </li>
+          <li>
+            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+            Messenger kids
+          </li>
+          <li>
+            <ion-icon name="card-outline"></ion-icon>
+            Order and payment
+          </li>
+          <li>
+            <ion-icon name="flag"></ion-icon>
+            Pages
+          </li>
+          <li>
+            <ion-icon name="game-controller-outline"></ion-icon>
+            Play games
+          </li>
+          <li>
+            <ion-icon name="images-outline"></ion-icon>
+            Recent ad activity
+          </li>
+          <li>
+            <ion-icon name="videocam-outline"></ion-icon>
+            Reels
+          </li>
+          <button class="w-full flex" id="showLess">
+            <ion-icon name="chevron-up-circle-outline"></ion-icon>
+            See less
+          </button>
+        </div>
+      </ul>
+
+      <main>
+        <!--! POSTS SECTION GOES HERE!! -->
+         <!--! DON'T TOUCH MY CODE WRITE YOURS HERE. -->
+      </main>
+
+      <ul class="right_nav flex_col">
+        <div class="sponsored">
+          <h2>Sponsored</h2>
+
+          <div class="flex sponsored_post">
+            <img src="/assets/img1.jpg" alt="" width="150" height="80" />
+
+            <div>
+              <h3>Latest Technology News</h3>
+              <p>wirewink.com</p>
+            </div>
+          </div>
+
+          <div class="flex sponsored_post">
+            <img src="/assets/img2.jpg" alt="" width="150" height="80" />
+
+            <div>
+              <h3>Adobe Photoshop 2024</h3>
+              <p>mediafire.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex_center_between">
+            <h3>Contacts</h3>
+            <div class="flex_center icon_container">
+              <ion-icon name="search-outline"></ion-icon>
+              <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </div>
+          </div>
+
+          <div class="contact_container">
+            <div class="flex_center contact_item">
+              <img src="/assets/profile.jpg" alt="" />
+              <p>Natasha Peg</p>
+            </div>
+            <div class="flex_center contact_item">
+              <img src="/assets/profile2.jpg" alt="" />
+              <p>Julie Stone</p>
+            </div>
+            <div class="flex_center contact_item">
+              <img src="/assets/profile3.jpg" alt="" />
+              <p>Walter Albert</p>
+            </div>
+            <div class="flex_center contact_item">
+              <img src="/assets/profile4.jpg" alt="" />
+              <p>James Paige</p>
+            </div>
+            <div class="flex_center contact_item">
+              <img src="/assets/profile7.jpg" alt="" />
+              <p>Alex Keys</p>
+            </div>
+            <div class="flex_center contact_item">
+              <img src="/assets/profile5.jpg" alt="" />
+              <p>Nicole Ruby</p>
+            </div>
+            <div class="flex_center contact_item">
+              <img src="/assets/profile1.jpg" alt="" />
+              <p>Brianna Tate</p>
+            </div>
+            <div class="flex_center contact_item">
+              <img src="/assets/profile4.jpg" alt="" />
+              <p>Mark Wills</p>
+            </div>
+            <div class="flex_center contact_item">
+              <img src="/assets/profile6.jpg" alt="" />
+              <p>Clint Holme</p>
+            </div>
+            <div class="flex_center contact_item">
+              <img src="/assets/profile7.jpg" alt="" />
+              <p>Tony Stark</p>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </section>
+  </body>
 </html>
